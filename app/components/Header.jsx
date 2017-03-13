@@ -5,7 +5,7 @@ import {
 
 export default function Header() {
   return (
-    <Flex align='center' justify='center'>
+    <Flex align="center" justify="center">
       <h1>Statistics</h1>
     </Flex>
   );

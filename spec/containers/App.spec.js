@@ -1,12 +1,15 @@
 import React from 'react';
 import {
+  Provider,
+} from 'react-redux';
+import {
+  createStore,
+} from 'redux';
+import {
   App,
   mapStateToProps,
-  mapDispatchToProps,
 } from 'containers/App';
-import {
-  shallow,
-} from 'enzyme';
+import reducers from 'reducers';
 import renderer from 'react-test-renderer';
 
 describe('App', () => {
@@ -22,64 +25,14 @@ describe('App', () => {
   ];
 
   it('match the snapshot', () => {
+    const store = createStore(reducers);
     const app = renderer.create(
-      <App statistics={statisticsData} addStatistic={() => {}} />
+      <Provider store={store}>
+        <App statistics={statisticsData} addStatistic={() => {}} />
+      </Provider>
     ).toJSON();
 
     expect(app).toMatchSnapshot();
-  });
-
-  describe('component actions', () => {
-    let app = undefined;
-
-    beforeEach(() => {
-      app = shallow(
-        <App statistics={statisticsData} addStatistic={() => {}} />
-      );
-    })
-
-    it('respond to name change', () => {
-      const value = 'A value';
-      const event = {
-        target: {
-          value: value
-        }
-      };
-
-      app.instance().handleNameChange(event);
-
-      expect(app.instance().state.name).toEqual(value);
-    });
-
-    it('respond to balance change', () => {
-      const value = 1000;
-      const event = {
-        target: {
-          value: value
-        }
-      };
-
-      app.instance().handleBalanceChange(event);
-
-      expect(app.instance().state.balance).toEqual(value);
-    });
-
-    it('call addStatistic with name and balance state', () => {
-      const spy = jest.fn();
-      const name = 'A name';
-      const balance = 1000;
-
-      app = shallow(
-        <App statistics={statisticsData} addStatistic={spy} />
-      );
-      app.instance().setState({
-        name,
-        balance,
-      });
-      app.instance().addStatistic();
-
-      expect(spy).toHaveBeenCalledWith(name, balance);
-    });
   });
 
   describe('mapStateToProps', () => {
@@ -94,17 +47,6 @@ describe('App', () => {
       };
 
       expect(mapStateToProps(state)).toEqual(expected);
-    })
-  });
-
-  describe('mapDispatchToProps', () => {
-    it('map dispatch to component props', () => {
-      const dispatch = jest.fn();
-      const expected = {
-        addStatistic: expect.any(Function),
-      };
-
-      expect(mapDispatchToProps(dispatch)).toEqual(expected);
     })
   });
 });
