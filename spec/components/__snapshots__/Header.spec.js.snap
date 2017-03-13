@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header match the snapshot 1`] = `
+<div
+  className="Flex"
+  style={
+    Object {
+      "WebkitAlignItems": "center",
+      "WebkitJustifyContent": "center",
+      "alignItems": "center",
+      "boxSizing": "border-box",
+      "display": "flex",
+      "justifyContent": "center",
+      "msAlignItems": "center",
+      "msJustifyContent": "center",
+    }
+  }
+>
+  <h1>
+    Statistics
+  </h1>
+</div>
+`;

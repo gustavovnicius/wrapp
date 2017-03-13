@@ -16,6 +16,7 @@ import {
 import {
   addStatistic,
 } from 'actions/statistics';
+import Header from 'components/Header';
 
 export class App extends Component {
   constructor(props) {
@@ -46,9 +47,7 @@ export class App extends Component {
   render() {
     return (
       <Container>
-        <Flex align="center" justify="center">
-          <h1>Hello!</h1>
-        </Flex>
+        <Header />
         <Flex align="center" justify="center" column>
           <div>
             <ul>

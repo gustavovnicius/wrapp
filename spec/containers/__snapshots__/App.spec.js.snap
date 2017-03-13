@@ -29,7 +29,7 @@ exports[`App match the snapshot 1`] = `
     }
   >
     <h1>
-      Hello!
+      Statistics
     </h1>
   </div>
   <div
