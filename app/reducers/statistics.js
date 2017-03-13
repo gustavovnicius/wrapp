@@ -12,8 +12,8 @@ export default function statistics(state = initialState, action) {
     case ADD_STATISTIC:
       return {
         ...state,
-        data: _.concat(state.data, [action.payload])
-      }
+        data: _.concat(state.data, [action.payload]),
+      };
     default:
       return state;
   }
