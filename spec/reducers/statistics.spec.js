@@ -2,7 +2,7 @@ import statistics from 'reducers/statistics';
 
 describe('statistics reducer', () => {
   const initialState = {
-    statistics: []
+    data: []
   };
 
   it('define an empty statistics list by default', () => {
@@ -20,7 +20,7 @@ describe('statistics reducer', () => {
       },
     }
     const expected = {
-      statistics: [{
+      data: [{
         name: 'A name',
         balance: 1000,
       }]

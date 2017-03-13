@@ -4,7 +4,7 @@ import {
 } from 'actions/statistics';
 
 const initialState = {
-  statistics: [],
+  data: [],
 };
 
 export default function statistics(state = initialState, action) {
@@ -12,7 +12,7 @@ export default function statistics(state = initialState, action) {
     case ADD_STATISTIC:
       return {
         ...state,
-        statistics: _.concat(state.statistics, [action.payload])
+        data: _.concat(state.data, [action.payload])
       }
     default:
       return state;

@@ -5,6 +5,9 @@ import {
 import {
   Flex,
 } from 'reflexbox';
+import {
+  connect
+} from 'react-redux';
 
 const statistics = [
   {
@@ -17,7 +20,7 @@ const statistics = [
   },
 ]
 
-function App() {
+function App({statistics}) {
   return (
     <Container>
       <Flex align='center' justify='center'>
@@ -42,3 +45,16 @@ function App() {
 }
 
 export default App;
+
+// <App>
+//   <Container>
+//     <Header>
+//     </Header>
+//
+//     <Body>
+//       <StatisticsSelector></StatisticsSelector>
+//       <StatisticsList></StatisticsList>
+//       <NewStatisticForm></NewStatisticForm>
+//     </Body>
+//   </Container>
+// </App>
