@@ -58,8 +58,10 @@
     "collectCoverage": true,
     "coveragePathIgnorePatterns": [
       "/node_modules/",
-      "specs/"
+      "spec/",
+      "scripts/"
     ],
+    "setupFiles": ["./scripts/jest/reflexbox-setup.js"],
     "notify": true
   }
 }

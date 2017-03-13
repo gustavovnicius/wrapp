@@ -1,0 +1,74 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App match the snapshot 1`] = `
+<div
+  className="Container"
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "auto",
+      "maxWidth": 1024,
+      "paddingLeft": 16,
+      "paddingRight": 16,
+    }
+  }
+>
+  <div
+    className="Flex"
+    style={
+      Object {
+        "WebkitAlignItems": "center",
+        "WebkitJustifyContent": "center",
+        "alignItems": "center",
+        "boxSizing": "border-box",
+        "display": "flex",
+        "justifyContent": "center",
+        "msAlignItems": "center",
+        "msJustifyContent": "center",
+      }
+    }
+  >
+    <h1>
+      Hello!
+    </h1>
+  </div>
+  <div
+    className="Flex"
+    style={
+      Object {
+        "WebkitAlignItems": "center",
+        "WebkitJustifyContent": "center",
+        "alignItems": "center",
+        "boxSizing": "border-box",
+        "display": "flex",
+        "justifyContent": "center",
+        "msAlignItems": "center",
+        "msJustifyContent": "center",
+      }
+    }
+  >
+    <ul>
+      <li>
+        <p>
+          Name: 
+          A name
+        </p>
+        <p>
+          Balance: 
+          1000
+        </p>
+      </li>
+      <li>
+        <p>
+          Name: 
+          Another name
+        </p>
+        <p>
+          Balance: 
+          2000
+        </p>
+      </li>
+    </ul>
+  </div>
+</div>
+`;
