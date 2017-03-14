@@ -1,0 +1,124 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Filter match the snapshot 1`] = `
+<div
+  className="Flex"
+  style={
+    Object {
+      "WebkitAlignItems": "center",
+      "WebkitJustifyContent": "center",
+      "alignItems": "center",
+      "boxSizing": "border-box",
+      "display": "flex",
+      "justifyContent": "center",
+      "msAlignItems": "center",
+      "msJustifyContent": "center",
+    }
+  }
+>
+  <label
+    className="Label"
+    style={
+      Object {
+        "alignItems": "center",
+        "boxSizing": "border-box",
+        "color": null,
+        "cursor": "pointer",
+        "display": "flex",
+        "flexDirection": null,
+        "fontSize": 14,
+        "fontWeight": 600,
+        "lineHeight": 1,
+        "paddingBottom": 8,
+        "position": "relative",
+      }
+    }
+  >
+    <input
+      checked={true}
+      name="filter"
+      onChange={[Function]}
+      style={
+        Object {
+          "opacity": 0,
+          "position": "absolute",
+          "zIndex": -1,
+        }
+      }
+      type="radio"
+    />
+    <div
+      className="Radio_dot"
+      style={
+        Object {
+          "backgroundColor": "#fff",
+          "borderColor": "currentcolor",
+          "borderRadius": 99999,
+          "borderStyle": "solid",
+          "borderWidth": 5,
+          "boxSizing": "border-box",
+          "height": 16,
+          "marginBottom": null,
+          "marginRight": 8,
+          "opacity": null,
+          "transition": "border .1s ease-out",
+          "width": 16,
+        }
+      }
+    />
+    All
+  </label>
+  <label
+    className="Label"
+    style={
+      Object {
+        "alignItems": "center",
+        "boxSizing": "border-box",
+        "color": null,
+        "cursor": "pointer",
+        "display": "flex",
+        "flexDirection": null,
+        "fontSize": 14,
+        "fontWeight": 600,
+        "lineHeight": 1,
+        "paddingBottom": 8,
+        "position": "relative",
+      }
+    }
+  >
+    <input
+      checked={false}
+      name="filter"
+      onChange={[Function]}
+      style={
+        Object {
+          "opacity": 0,
+          "position": "absolute",
+          "zIndex": -1,
+        }
+      }
+      type="radio"
+    />
+    <div
+      className="Radio_dot"
+      style={
+        Object {
+          "backgroundColor": "currentcolor",
+          "borderColor": null,
+          "borderRadius": 99999,
+          "borderStyle": null,
+          "borderWidth": 5,
+          "boxSizing": "border-box",
+          "height": 16,
+          "marginBottom": null,
+          "marginRight": 8,
+          "opacity": 0.25,
+          "transition": "border .1s ease-out",
+          "width": 16,
+        }
+      }
+    />
+    Positive
+  </label>
+</div>
+`;

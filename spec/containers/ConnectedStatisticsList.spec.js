@@ -8,7 +8,13 @@ describe('ConnectedStatisticsList', () => {
     it('map statistics list to component props', () => {
       const state = {
         statistics: {
-          data: []
+          data: [],
+        },
+        filter: {
+          selected: {
+            label: 'All',
+            filter: jest.fn()
+          }
         }
       };
       const expected = {
