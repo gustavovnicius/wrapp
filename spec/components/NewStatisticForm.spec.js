@@ -12,7 +12,7 @@ import NewStatisticForm from 'components/NewStatisticForm';
 describe('NewStatisticForm', () => {
   it('match the snapshot', () => {
     const form = renderer.create(
-      <NewStatisticForm onSubmit={jest.fn()} />
+      <NewStatisticForm onSubmit={jest.fn()} />,
     ).toJSON();
 
     expect(form).toMatchSnapshot();
@@ -21,21 +21,21 @@ describe('NewStatisticForm', () => {
   describe('component events', () => {
     const name = 'Name';
     const balance = 1000;
-    let spy = undefined;
-    let form = undefined;
+    let spy;
+    let form;
 
     beforeEach(() => {
       spy = jest.fn();
       form = shallow(
-        <NewStatisticForm onSubmit={spy} />
+        <NewStatisticForm onSubmit={spy} />,
       );
     });
 
     it('call handleNameChange on name input change', () => {
       const event = {
         target: {
-          value: name
-        }
+          value: name,
+        },
       };
 
       form.find(Input).first().simulate('change', event);
@@ -46,8 +46,8 @@ describe('NewStatisticForm', () => {
     it('call handleBalanceChange on name input change', () => {
       const event = {
         target: {
-          value: balance
-        }
+          value: balance,
+        },
       };
 
       form.find(Input).last().simulate('change', event);
@@ -72,7 +72,7 @@ describe('NewStatisticForm', () => {
       });
       form.find(Button).simulate('click');
 
-      expect(form.instance().state).toEqual({name: '', balance: ''});
+      expect(form.instance().state).toEqual({ name: '', balance: '' });
     });
   });
-})
+});

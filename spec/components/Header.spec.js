@@ -5,9 +5,9 @@ import Header from 'components/Header';
 describe('Header', () => {
   it('match the snapshot', () => {
     const header = renderer.create(
-      <Header />
+      <Header />,
     ).toJSON();
 
     expect(header).toMatchSnapshot();
   });
-})
+});

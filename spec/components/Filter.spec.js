@@ -9,9 +9,9 @@ import {
 import Filter from 'components/Filter';
 
 describe('Filter', () => {
-  let spy = undefined;
-  let enabled = undefined;
-  let selected = undefined;
+  let spy;
+  let enabled;
+  let selected;
 
   beforeEach(() => {
     spy = jest.fn();
@@ -32,19 +32,19 @@ describe('Filter', () => {
   });
 
   it('match the snapshot', () => {
-    let filter = renderer.create(
-      <Filter enabled={enabled} selected={selected} applyFilter={spy}  />
+    const filter = renderer.create(
+      <Filter enabled={enabled} selected={selected} applyFilter={spy} />,
     ).toJSON();
 
     expect(filter).toMatchSnapshot();
   });
 
   describe('component events', () => {
-    let filter = undefined;
+    let filter;
 
     beforeEach(() => {
       filter = shallow(
-        <Filter enabled={enabled} selected={selected} applyFilter={spy}  />
+        <Filter enabled={enabled} selected={selected} applyFilter={spy} />,
       );
     });
 
@@ -59,4 +59,4 @@ describe('Filter', () => {
       expect(spy).toHaveBeenCalledWith(expected);
     });
   });
-})
+});

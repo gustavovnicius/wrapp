@@ -1,4 +1,3 @@
-import React from 'react';
 import {
   mapStateToProps,
   mapDispatchToProps,
@@ -9,13 +8,13 @@ describe('ConnectedNewStatisticForm', () => {
     it('does not map nothing to component props', () => {
       const state = {
         statistics: {
-          data: []
-        }
+          data: [],
+        },
       };
       const expected = {};
 
       expect(mapStateToProps(state)).toEqual(expected);
-    })
+    });
   });
 
   describe('mapDispatchToProps', () => {
@@ -26,6 +25,6 @@ describe('ConnectedNewStatisticForm', () => {
       };
 
       expect(mapDispatchToProps(dispatch)).toEqual(expected);
-    })
+    });
   });
 });

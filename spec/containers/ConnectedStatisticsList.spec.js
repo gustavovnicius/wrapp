@@ -1,4 +1,3 @@
-import React from 'react';
 import {
   mapStateToProps,
 } from 'containers/ConnectedStatisticsList';
@@ -13,15 +12,15 @@ describe('ConnectedStatisticsList', () => {
         filter: {
           selected: {
             label: 'All',
-            filter: jest.fn()
-          }
-        }
+            filter: jest.fn(),
+          },
+        },
       };
       const expected = {
-        statistics: []
+        statistics: [],
       };
 
       expect(mapStateToProps(state)).toEqual(expected);
-    })
+    });
   });
 });

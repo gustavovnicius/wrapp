@@ -7,9 +7,9 @@ describe('Statistics actions', () => {
         type: statisticsActions.ADD_STATISTIC,
         payload: {
           name: 'A name',
-          balance: 1000
-        }
-      }
+          balance: 1000,
+        },
+      };
 
       expect(statisticsActions.addStatistic('A name', 1000)).toEqual(expected);
     });

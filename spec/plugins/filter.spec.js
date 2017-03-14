@@ -16,12 +16,12 @@ describe('Filter plugin', () => {
       name: 'Negative',
       balance: -100,
     },
-  ]
+  ];
 
   describe('allFilter', () => {
     it('return the same collection', () => {
       expect(statistics.filter(allFilter)).toEqual(statistics);
-    })
+    });
   });
 
   describe('positiveBalanceFilter', () => {
@@ -34,7 +34,7 @@ describe('Filter plugin', () => {
       ];
 
       expect(statistics.filter(positiveBalanceFilter)).toEqual(expected);
-    })
+    });
   });
 
   describe('negativeBalanceFilter', () => {
@@ -47,7 +47,7 @@ describe('Filter plugin', () => {
       ];
 
       expect(statistics.filter(negativeBalanceFilter)).toEqual(expected);
-    })
+    });
   });
 
   describe('defaultFilter', () => {
@@ -55,7 +55,7 @@ describe('Filter plugin', () => {
       const expected = {
         label: 'All',
         filter: allFilter,
-      }
+      };
 
       expect(defaultFilter()).toEqual(expected);
     });
@@ -70,13 +70,13 @@ describe('Filter plugin', () => {
         },
         {
           label: 'Positive',
-          filter: positiveBalanceFilter
+          filter: positiveBalanceFilter,
         },
         {
           label: 'Negative',
-          filter: negativeBalanceFilter
+          filter: negativeBalanceFilter,
         },
-      ]
+      ];
 
       expect(enabledFilters()).toEqual(expected);
     });

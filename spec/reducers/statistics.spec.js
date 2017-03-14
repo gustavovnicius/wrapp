@@ -2,13 +2,13 @@ import statistics from 'reducers/statistics';
 
 describe('statistics reducer', () => {
   const initialState = {
-    data: []
+    data: [],
   };
 
   it('define an empty statistics list by default', () => {
-    const dummyAction = { type: 'DUMMY' }
+    const dummyAction = { type: 'DUMMY' };
 
-    expect(statistics(undefined, dummyAction)).toEqual(initialState)
+    expect(statistics(undefined, dummyAction)).toEqual(initialState);
   });
 
   it('accepts an ADD_STATISTIC action', () => {
@@ -18,14 +18,14 @@ describe('statistics reducer', () => {
         name: 'A name',
         balance: 1000,
       },
-    }
+    };
     const expected = {
       data: [{
         name: 'A name',
         balance: 1000,
-      }]
-    }
+      }],
+    };
 
-    expect(statistics(initialState, addStatisticAction)).toEqual(expected)
-  })
+    expect(statistics(initialState, addStatisticAction)).toEqual(expected);
+  });
 });

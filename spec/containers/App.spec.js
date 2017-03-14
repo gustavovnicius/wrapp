@@ -15,7 +15,7 @@ describe('App', () => {
     const app = renderer.create(
       <Provider store={store}>
         <App />
-      </Provider>
+      </Provider>,
     ).toJSON();
 
     expect(app).toMatchSnapshot();

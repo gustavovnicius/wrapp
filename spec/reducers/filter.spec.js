@@ -16,7 +16,7 @@ describe('filter reducer', () => {
       },
     };
 
-    expect(filter(undefined, dummyAction)).toEqual(expected)
+    expect(filter(undefined, dummyAction)).toEqual(expected);
   });
 
   it('accepts an APPLY_FILTER action', () => {
@@ -35,8 +35,8 @@ describe('filter reducer', () => {
         label: 'Positive',
         filter: expect.any(Function),
       },
-    }
+    };
 
-    expect(filter(initialState, applyFilterAction)).toEqual(expected)
-  })
+    expect(filter(initialState, applyFilterAction)).toEqual(expected);
+  });
 });

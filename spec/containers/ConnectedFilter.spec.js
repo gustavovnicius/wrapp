@@ -1,4 +1,3 @@
-import React from 'react';
 import {
   mapStateToProps,
   mapDispatchToProps,
@@ -11,7 +10,7 @@ describe('ConnectedFilter', () => {
         filter: {
           enabled: [],
           selected: {},
-        }
+        },
       };
       const expected = {
         enabled: [],
@@ -19,7 +18,7 @@ describe('ConnectedFilter', () => {
       };
 
       expect(mapStateToProps(state)).toEqual(expected);
-    })
+    });
   });
 
   describe('mapDispatchToProps', () => {
@@ -30,6 +29,6 @@ describe('ConnectedFilter', () => {
       };
 
       expect(mapDispatchToProps(dispatch)).toEqual(expected);
-    })
+    });
   });
 });

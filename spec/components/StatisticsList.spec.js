@@ -11,14 +11,14 @@ describe('StatisticsList', () => {
     {
       name: 'Another name',
       balance: 2000,
-    }
+    },
   ];
 
   it('match the snapshot', () => {
     const statisticsList = renderer.create(
-      <StatisticsList statistics={statisticsData} />
+      <StatisticsList statistics={statisticsData} />,
     ).toJSON();
 
     expect(statisticsList).toMatchSnapshot();
   });
-})
+});
