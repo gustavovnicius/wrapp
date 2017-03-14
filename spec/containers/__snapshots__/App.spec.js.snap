@@ -51,28 +51,7 @@ exports[`App match the snapshot 1`] = `
     }
   >
     <div>
-      <ul>
-        <li>
-          <p>
-            Name: 
-            A name
-          </p>
-          <p>
-            Balance: 
-            1000
-          </p>
-        </li>
-        <li>
-          <p>
-            Name: 
-            Another name
-          </p>
-          <p>
-            Balance: 
-            2000
-          </p>
-        </li>
-      </ul>
+      <ul />
     </div>
     <div
       className="Container"
