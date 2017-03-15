@@ -31,7 +31,7 @@ class NewStatisticForm extends Component {
   }
 
   addStatistic() {
-    this.props.onSubmit(this.state.name, this.state.balance);
+    this.props.onSubmit(this.state.name, parseFloat(this.state.balance));
 
     this.setState({
       name: '',
@@ -62,7 +62,7 @@ class NewStatisticForm extends Component {
           hideLabel
           type="number"
         />
-        <Button style={{width: '100%'}} onClick={() => this.addStatistic()}>
+        <Button style={{ width: '100%' }} onClick={() => this.addStatistic()}>
           Add
         </Button>
       </Container>
