@@ -6,6 +6,7 @@ import {
 } from 'rebass';
 import {
   Flex,
+  Box,
 } from 'reflexbox';
 
 export default function Filter({ enabled, selected, applyFilter }) {
@@ -13,14 +14,15 @@ export default function Filter({ enabled, selected, applyFilter }) {
     <Flex align="center" justify="center">
       {
         enabled.map(filter => (
-          <Radio
-            key={filter.label}
-            circle
-            checked={selected.label === filter.label}
-            onChange={() => applyFilter(filter)}
-            label={filter.label}
-            name="filter"
-          />
+          <Box p={2} key={filter.label}>
+            <Radio
+              circle
+              checked={selected.label === filter.label}
+              onChange={() => applyFilter(filter)}
+              label={filter.label}
+              name="filter"
+            />
+          </Box>
           ))
       }
     </Flex>

@@ -29,18 +29,23 @@ exports[`NewStatisticForm match the snapshot 1`] = `
       style={
         Object {
           "boxSizing": "border-box",
+          "clip": "rect(1px, 1px, 1px, 1px)",
           "fontSize": 14,
           "fontWeight": 600,
+          "height": 1,
           "lineHeight": 1,
+          "overflow": "hidden",
+          "position": "absolute",
+          "width": 1,
         }
       }
     >
-      Name
+      
     </label>
     <input
       name="name"
       onChange={[Function]}
-      placeholder="Statistic name"
+      placeholder="Name"
       style={
         Object {
           "backgroundColor": "rgba(255, 255, 255, .25)",
@@ -80,18 +85,23 @@ exports[`NewStatisticForm match the snapshot 1`] = `
       style={
         Object {
           "boxSizing": "border-box",
+          "clip": "rect(1px, 1px, 1px, 1px)",
           "fontSize": 14,
           "fontWeight": 600,
+          "height": 1,
           "lineHeight": 1,
+          "overflow": "hidden",
+          "position": "absolute",
+          "width": 1,
         }
       }
     >
-      Balance
+      
     </label>
     <input
       name="balance"
       onChange={[Function]}
-      placeholder="Statistic balance"
+      placeholder="Balance"
       style={
         Object {
           "backgroundColor": "rgba(255, 255, 255, .25)",
@@ -139,6 +149,7 @@ exports[`NewStatisticForm match the snapshot 1`] = `
         "paddingRight": 16,
         "paddingTop": 8,
         "textDecoration": "none",
+        "width": "100%",
       }
     }
   >

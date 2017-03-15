@@ -43,24 +43,26 @@ class NewStatisticForm extends Component {
     return (
       <Container>
         <Input
-          label="Name"
+          label=""
           name="name"
-          placeholder="Statistic name"
+          placeholder="Name"
           value={this.state.name}
           onChange={event => this.handleNameChange(event)}
           rounded
+          hideLabel
           type="text"
         />
         <Input
-          label="Balance"
+          label=""
           name="balance"
-          placeholder="Statistic balance"
+          placeholder="Balance"
           value={this.state.balance}
           onChange={event => this.handleBalanceChange(event)}
           rounded
+          hideLabel
           type="number"
         />
-        <Button onClick={() => this.addStatistic()}>
+        <Button style={{width: '100%'}} onClick={() => this.addStatistic()}>
           Add
         </Button>
       </Container>
