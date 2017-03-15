@@ -7,8 +7,8 @@ var config = {
   entry: {
     app: path.resolve(__dirname, 'app/index.js'),
     vendor: [
-      'lodash', 'react', 'react-dom', 'react-redux', 'rebass', 'redux',
-      'reflexbox',
+      'numeral', 'lodash', 'react', 'react-dom', 'react-redux', 'rebass',
+      'redux', 'reflexbox',
     ]
   },
   resolve:{

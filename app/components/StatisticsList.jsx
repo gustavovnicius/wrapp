@@ -1,19 +1,18 @@
 import React from 'react';
+import {
+  Container,
+} from 'rebass';
+import Statistic from 'components/Statistic';
 
 function StatisticsList({ statistics }) {
   return (
-    <div>
-      <ul>
-        {
-          statistics.map((statistic, index) => (
-            <li key={index}>
-              <p>Name: {statistic.name}</p>
-              <p>Balance: {statistic.balance}</p>
-            </li>
-          ))
-        }
-      </ul>
-    </div>
+    <Container>
+      {
+        statistics.map((statistic, index) => (
+          <Statistic key={index} {...statistic} />
+        ))
+      }
+    </Container>
   );
 }
 

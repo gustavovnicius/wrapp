@@ -14,39 +14,11 @@ exports[`App match the snapshot 1`] = `
   }
 >
   <div
-    className="Flex"
+    className="Box"
     style={
       Object {
-        "WebkitAlignItems": "center",
-        "WebkitJustifyContent": "center",
-        "alignItems": "center",
         "boxSizing": "border-box",
-        "display": "flex",
-        "justifyContent": "center",
-        "msAlignItems": "center",
-        "msJustifyContent": "center",
-      }
-    }
-  >
-    <h1>
-      Statistics
-    </h1>
-  </div>
-  <div
-    className="Flex"
-    style={
-      Object {
-        "WebkitAlignItems": "center",
-        "WebkitFlexDirection": "column",
-        "WebkitJustifyContent": "center",
-        "alignItems": "center",
-        "boxSizing": "border-box",
-        "display": "flex",
-        "flexDirection": "column",
-        "justifyContent": "center",
-        "msAlignItems": "center",
-        "msFlexDirection": "column",
-        "msJustifyContent": "center",
+        "margin": 32,
       }
     }
   >
@@ -65,350 +37,407 @@ exports[`App match the snapshot 1`] = `
         }
       }
     >
-      <div
-        className="Box"
-        style={
-          Object {
-            "boxSizing": "border-box",
-            "padding": 16,
-          }
-        }
-      >
-        <label
-          className="Label"
-          style={
-            Object {
-              "alignItems": "center",
-              "boxSizing": "border-box",
-              "color": null,
-              "cursor": "pointer",
-              "display": "flex",
-              "flexDirection": null,
-              "fontSize": 14,
-              "fontWeight": 600,
-              "lineHeight": 1,
-              "paddingBottom": 8,
-              "position": "relative",
-            }
-          }
-        >
-          <input
-            checked={true}
-            name="filter"
-            onChange={[Function]}
-            style={
-              Object {
-                "opacity": 0,
-                "position": "absolute",
-                "zIndex": -1,
-              }
-            }
-            type="radio"
-          />
-          <div
-            className="Radio_dot"
-            style={
-              Object {
-                "backgroundColor": "#fff",
-                "borderColor": "currentcolor",
-                "borderRadius": 99999,
-                "borderStyle": "solid",
-                "borderWidth": 5,
-                "boxSizing": "border-box",
-                "height": 16,
-                "marginBottom": null,
-                "marginRight": 8,
-                "opacity": null,
-                "transition": "border .1s ease-out",
-                "width": 16,
-              }
-            }
-          />
-          All
-        </label>
-      </div>
-      <div
-        className="Box"
-        style={
-          Object {
-            "boxSizing": "border-box",
-            "padding": 16,
-          }
-        }
-      >
-        <label
-          className="Label"
-          style={
-            Object {
-              "alignItems": "center",
-              "boxSizing": "border-box",
-              "color": null,
-              "cursor": "pointer",
-              "display": "flex",
-              "flexDirection": null,
-              "fontSize": 14,
-              "fontWeight": 600,
-              "lineHeight": 1,
-              "paddingBottom": 8,
-              "position": "relative",
-            }
-          }
-        >
-          <input
-            checked={false}
-            name="filter"
-            onChange={[Function]}
-            style={
-              Object {
-                "opacity": 0,
-                "position": "absolute",
-                "zIndex": -1,
-              }
-            }
-            type="radio"
-          />
-          <div
-            className="Radio_dot"
-            style={
-              Object {
-                "backgroundColor": "currentcolor",
-                "borderColor": null,
-                "borderRadius": 99999,
-                "borderStyle": null,
-                "borderWidth": 5,
-                "boxSizing": "border-box",
-                "height": 16,
-                "marginBottom": null,
-                "marginRight": 8,
-                "opacity": 0.25,
-                "transition": "border .1s ease-out",
-                "width": 16,
-              }
-            }
-          />
-          Positive
-        </label>
-      </div>
-      <div
-        className="Box"
-        style={
-          Object {
-            "boxSizing": "border-box",
-            "padding": 16,
-          }
-        }
-      >
-        <label
-          className="Label"
-          style={
-            Object {
-              "alignItems": "center",
-              "boxSizing": "border-box",
-              "color": null,
-              "cursor": "pointer",
-              "display": "flex",
-              "flexDirection": null,
-              "fontSize": 14,
-              "fontWeight": 600,
-              "lineHeight": 1,
-              "paddingBottom": 8,
-              "position": "relative",
-            }
-          }
-        >
-          <input
-            checked={false}
-            name="filter"
-            onChange={[Function]}
-            style={
-              Object {
-                "opacity": 0,
-                "position": "absolute",
-                "zIndex": -1,
-              }
-            }
-            type="radio"
-          />
-          <div
-            className="Radio_dot"
-            style={
-              Object {
-                "backgroundColor": "currentcolor",
-                "borderColor": null,
-                "borderRadius": 99999,
-                "borderStyle": null,
-                "borderWidth": 5,
-                "boxSizing": "border-box",
-                "height": 16,
-                "marginBottom": null,
-                "marginRight": 8,
-                "opacity": 0.25,
-                "transition": "border .1s ease-out",
-                "width": 16,
-              }
-            }
-          />
-          Negative
-        </label>
-      </div>
-    </div>
-    <div>
-      <ul />
+      <h1>
+        Statistics
+      </h1>
     </div>
     <div
-      className="Container"
+      className="Flex"
       style={
         Object {
+          "WebkitAlignItems": "center",
+          "WebkitFlexDirection": "column",
+          "WebkitJustifyContent": "center",
+          "alignItems": "center",
           "boxSizing": "border-box",
-          "margin": "auto",
-          "maxWidth": 1024,
-          "paddingLeft": 16,
-          "paddingRight": 16,
+          "display": "flex",
+          "flexDirection": "column",
+          "justifyContent": "center",
+          "msAlignItems": "center",
+          "msFlexDirection": "column",
+          "msJustifyContent": "center",
         }
       }
     >
       <div
-        className="Input"
+        className="Flex"
         style={
           Object {
+            "WebkitAlignItems": "center",
+            "WebkitJustifyContent": "center",
+            "alignItems": "center",
             "boxSizing": "border-box",
-            "color": null,
-            "marginBottom": 16,
+            "display": "flex",
+            "justifyContent": "center",
+            "msAlignItems": "center",
+            "msJustifyContent": "center",
           }
         }
       >
-        <label
-          className="Label"
-          htmlFor="name"
+        <div
+          className="Box"
           style={
             Object {
               "boxSizing": "border-box",
-              "clip": "rect(1px, 1px, 1px, 1px)",
-              "fontSize": 14,
-              "fontWeight": 600,
-              "height": 1,
-              "lineHeight": 1,
-              "overflow": "hidden",
-              "position": "absolute",
-              "width": 1,
+              "padding": 16,
             }
           }
         >
-          
-        </label>
-        <input
-          name="name"
-          onChange={[Function]}
-          placeholder="Name"
+          <label
+            className="Label"
+            style={
+              Object {
+                "alignItems": "center",
+                "boxSizing": "border-box",
+                "color": null,
+                "cursor": "pointer",
+                "display": "flex",
+                "flexDirection": null,
+                "fontSize": 14,
+                "fontWeight": 600,
+                "lineHeight": 1,
+                "paddingBottom": 8,
+                "position": "relative",
+              }
+            }
+          >
+            <input
+              checked={true}
+              name="filter"
+              onChange={[Function]}
+              style={
+                Object {
+                  "opacity": 0,
+                  "position": "absolute",
+                  "zIndex": -1,
+                }
+              }
+              type="radio"
+            />
+            <div
+              className="Radio_dot"
+              style={
+                Object {
+                  "backgroundColor": "#fff",
+                  "borderColor": "currentcolor",
+                  "borderRadius": 99999,
+                  "borderStyle": "solid",
+                  "borderWidth": 5,
+                  "boxSizing": "border-box",
+                  "height": 16,
+                  "marginBottom": null,
+                  "marginRight": 8,
+                  "opacity": null,
+                  "transition": "border .1s ease-out",
+                  "width": 16,
+                }
+              }
+            />
+            All
+          </label>
+        </div>
+        <div
+          className="Box"
           style={
             Object {
-              "backgroundColor": "rgba(255, 255, 255, .25)",
-              "borderColor": "rgba(0, 0, 0, .25)",
-              "borderRadius": 2,
-              "borderStyle": "solid",
-              "borderWidth": 1,
               "boxSizing": "border-box",
-              "color": "inherit",
-              "display": "block",
-              "fontFamily": "inherit",
-              "fontSize": "inherit",
-              "height": 32,
-              "margin": 0,
-              "paddingLeft": 8,
-              "paddingRight": 8,
-              "width": "100%",
+              "padding": 16,
             }
           }
-          type="text"
-          value=""
+        >
+          <label
+            className="Label"
+            style={
+              Object {
+                "alignItems": "center",
+                "boxSizing": "border-box",
+                "color": null,
+                "cursor": "pointer",
+                "display": "flex",
+                "flexDirection": null,
+                "fontSize": 14,
+                "fontWeight": 600,
+                "lineHeight": 1,
+                "paddingBottom": 8,
+                "position": "relative",
+              }
+            }
+          >
+            <input
+              checked={false}
+              name="filter"
+              onChange={[Function]}
+              style={
+                Object {
+                  "opacity": 0,
+                  "position": "absolute",
+                  "zIndex": -1,
+                }
+              }
+              type="radio"
+            />
+            <div
+              className="Radio_dot"
+              style={
+                Object {
+                  "backgroundColor": "currentcolor",
+                  "borderColor": null,
+                  "borderRadius": 99999,
+                  "borderStyle": null,
+                  "borderWidth": 5,
+                  "boxSizing": "border-box",
+                  "height": 16,
+                  "marginBottom": null,
+                  "marginRight": 8,
+                  "opacity": 0.25,
+                  "transition": "border .1s ease-out",
+                  "width": 16,
+                }
+              }
+            />
+            Positive
+          </label>
+        </div>
+        <div
+          className="Box"
+          style={
+            Object {
+              "boxSizing": "border-box",
+              "padding": 16,
+            }
+          }
+        >
+          <label
+            className="Label"
+            style={
+              Object {
+                "alignItems": "center",
+                "boxSizing": "border-box",
+                "color": null,
+                "cursor": "pointer",
+                "display": "flex",
+                "flexDirection": null,
+                "fontSize": 14,
+                "fontWeight": 600,
+                "lineHeight": 1,
+                "paddingBottom": 8,
+                "position": "relative",
+              }
+            }
+          >
+            <input
+              checked={false}
+              name="filter"
+              onChange={[Function]}
+              style={
+                Object {
+                  "opacity": 0,
+                  "position": "absolute",
+                  "zIndex": -1,
+                }
+              }
+              type="radio"
+            />
+            <div
+              className="Radio_dot"
+              style={
+                Object {
+                  "backgroundColor": "currentcolor",
+                  "borderColor": null,
+                  "borderRadius": 99999,
+                  "borderStyle": null,
+                  "borderWidth": 5,
+                  "boxSizing": "border-box",
+                  "height": 16,
+                  "marginBottom": null,
+                  "marginRight": 8,
+                  "opacity": 0.25,
+                  "transition": "border .1s ease-out",
+                  "width": 16,
+                }
+              }
+            />
+            Negative
+          </label>
+        </div>
+      </div>
+      <div
+        className="Box"
+        style={
+          Object {
+            "boxSizing": "border-box",
+            "margin": 16,
+          }
+        }
+      >
+        <div
+          className="Container"
+          style={
+            Object {
+              "boxSizing": "border-box",
+              "margin": "auto",
+              "maxWidth": 1024,
+              "paddingLeft": 16,
+              "paddingRight": 16,
+            }
+          }
         />
       </div>
       <div
-        className="Input"
+        className="Container"
         style={
           Object {
             "boxSizing": "border-box",
-            "color": null,
-            "marginBottom": 16,
+            "margin": "auto",
+            "maxWidth": 1024,
+            "paddingLeft": 16,
+            "paddingRight": 16,
           }
         }
       >
-        <label
-          className="Label"
-          htmlFor="balance"
+        <div
+          className="Input"
           style={
             Object {
               "boxSizing": "border-box",
-              "clip": "rect(1px, 1px, 1px, 1px)",
-              "fontSize": 14,
-              "fontWeight": 600,
-              "height": 1,
-              "lineHeight": 1,
-              "overflow": "hidden",
-              "position": "absolute",
-              "width": 1,
+              "color": null,
+              "marginBottom": 16,
             }
           }
         >
-          
-        </label>
-        <input
-          name="balance"
-          onChange={[Function]}
-          placeholder="Balance"
+          <label
+            className="Label"
+            htmlFor="name"
+            style={
+              Object {
+                "boxSizing": "border-box",
+                "clip": "rect(1px, 1px, 1px, 1px)",
+                "fontSize": 14,
+                "fontWeight": 600,
+                "height": 1,
+                "lineHeight": 1,
+                "overflow": "hidden",
+                "position": "absolute",
+                "width": 1,
+              }
+            }
+          >
+            
+          </label>
+          <input
+            name="name"
+            onChange={[Function]}
+            placeholder="Name"
+            style={
+              Object {
+                "backgroundColor": "rgba(255, 255, 255, .25)",
+                "borderColor": "rgba(0, 0, 0, .25)",
+                "borderRadius": 2,
+                "borderStyle": "solid",
+                "borderWidth": 1,
+                "boxSizing": "border-box",
+                "color": "inherit",
+                "display": "block",
+                "fontFamily": "inherit",
+                "fontSize": "inherit",
+                "height": 32,
+                "margin": 0,
+                "paddingLeft": 8,
+                "paddingRight": 8,
+                "width": "100%",
+              }
+            }
+            type="text"
+            value=""
+          />
+        </div>
+        <div
+          className="Input"
           style={
             Object {
-              "backgroundColor": "rgba(255, 255, 255, .25)",
-              "borderColor": "rgba(0, 0, 0, .25)",
-              "borderRadius": 2,
-              "borderStyle": "solid",
-              "borderWidth": 1,
               "boxSizing": "border-box",
-              "color": "inherit",
-              "display": "block",
+              "color": null,
+              "marginBottom": 16,
+            }
+          }
+        >
+          <label
+            className="Label"
+            htmlFor="balance"
+            style={
+              Object {
+                "boxSizing": "border-box",
+                "clip": "rect(1px, 1px, 1px, 1px)",
+                "fontSize": 14,
+                "fontWeight": 600,
+                "height": 1,
+                "lineHeight": 1,
+                "overflow": "hidden",
+                "position": "absolute",
+                "width": 1,
+              }
+            }
+          >
+            
+          </label>
+          <input
+            name="balance"
+            onChange={[Function]}
+            placeholder="Balance"
+            style={
+              Object {
+                "backgroundColor": "rgba(255, 255, 255, .25)",
+                "borderColor": "rgba(0, 0, 0, .25)",
+                "borderRadius": 2,
+                "borderStyle": "solid",
+                "borderWidth": 1,
+                "boxSizing": "border-box",
+                "color": "inherit",
+                "display": "block",
+                "fontFamily": "inherit",
+                "fontSize": "inherit",
+                "height": 32,
+                "margin": 0,
+                "paddingLeft": 8,
+                "paddingRight": 8,
+                "width": "100%",
+              }
+            }
+            type="number"
+            value=""
+          />
+        </div>
+        <button
+          className="Button"
+          href={undefined}
+          onClick={[Function]}
+          style={
+            Object {
+              "backgroundColor": "#08e",
+              "border": 0,
+              "borderRadius": 2,
+              "boxSizing": "border-box",
+              "color": "#fff",
+              "cursor": "pointer",
+              "display": "inline-block",
               "fontFamily": "inherit",
-              "fontSize": "inherit",
-              "height": 32,
+              "fontSize": 14,
+              "fontWeight": 600,
+              "lineHeight": "16px",
               "margin": 0,
-              "paddingLeft": 8,
-              "paddingRight": 8,
+              "minHeight": 32,
+              "paddingBottom": 8,
+              "paddingLeft": 16,
+              "paddingRight": 16,
+              "paddingTop": 8,
+              "textDecoration": "none",
               "width": "100%",
             }
           }
-          type="number"
-          value=""
-        />
+        >
+          Add
+        </button>
       </div>
-      <button
-        className="Button"
-        href={undefined}
-        onClick={[Function]}
-        style={
-          Object {
-            "backgroundColor": "#08e",
-            "border": 0,
-            "borderRadius": 2,
-            "boxSizing": "border-box",
-            "color": "#fff",
-            "cursor": "pointer",
-            "display": "inline-block",
-            "fontFamily": "inherit",
-            "fontSize": 14,
-            "fontWeight": 600,
-            "lineHeight": "16px",
-            "margin": 0,
-            "minHeight": 32,
-            "paddingBottom": 8,
-            "paddingLeft": 16,
-            "paddingRight": 16,
-            "paddingTop": 8,
-            "textDecoration": "none",
-            "width": "100%",
-          }
-        }
-      >
-        Add
-      </button>
     </div>
   </div>
 </div>

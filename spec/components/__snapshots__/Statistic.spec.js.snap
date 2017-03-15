@@ -1,0 +1,136 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Statistic match the snapshot 1`] = `
+<div
+  className="Container"
+  style={
+    Object {
+      "boxSizing": "border-box",
+      "margin": "auto",
+      "maxWidth": 1024,
+      "paddingLeft": 16,
+      "paddingRight": 16,
+    }
+  }
+>
+  <div
+    className="Flex"
+    style={
+      Object {
+        "WebkitFlexDirection": "column",
+        "boxSizing": "border-box",
+        "display": "flex",
+        "flexDirection": "column",
+        "msFlexDirection": "column",
+      }
+    }
+  >
+    <div
+      className="Card"
+      style={
+        Object {
+          "borderColor": "rgba(0, 0, 0, .25)",
+          "borderRadius": 2,
+          "borderStyle": "solid",
+          "borderWidth": 1,
+          "boxSizing": "border-box",
+          "marginBottom": 16,
+          "overflow": "hidden",
+          "padding": 8,
+          "width": 350,
+        }
+      }
+    >
+      <div
+        className="Box"
+        style={
+          Object {
+            "boxSizing": "border-box",
+            "marginTop": 8,
+          }
+        }
+      >
+        <h2
+          className="Heading"
+          style={
+            Object {
+              "boxSizing": "border-box",
+              "fontSize": 24,
+              "fontWeight": 600,
+              "lineHeight": 1.25,
+              "margin": 0,
+              "opacity": null,
+            }
+          }
+        >
+          A name
+        </h2>
+      </div>
+      <hr
+        className="Divider"
+        style={
+          Object {
+            "border": 0,
+            "borderBottomColor": "rgba(0, 0, 0, .25)",
+            "borderBottomStyle": "solid",
+            "borderBottomWidth": 1,
+            "boxSizing": "border-box",
+            "marginBottom": 16,
+            "marginTop": 16,
+            "width": undefined,
+          }
+        }
+      />
+      <div
+        className="Flex"
+        style={
+          Object {
+            "WebkitJustifyContent": "flex-end",
+            "boxSizing": "border-box",
+            "display": "flex",
+            "justifyContent": "flex-end",
+            "msJustifyContent": "flex-end",
+          }
+        }
+      >
+        <div
+          className="Stat"
+          style={
+            Object {
+              "boxSizing": "border-box",
+              "display": "inline-block",
+            }
+          }
+        >
+          <div
+            style={
+              Object {
+                "fontSize": 48,
+                "fontWeight": 600,
+                "letterSpace": "-.125em",
+                "lineHeight": 1,
+                "marginBottom": 4,
+                "marginTop": null,
+              }
+            }
+          >
+            1,000.00
+            
+          </div>
+          <div
+            style={
+              Object {
+                "fontSize": 12,
+                "fontWeight": 600,
+                "lineHeight": 1,
+              }
+            }
+          >
+            Balance
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
